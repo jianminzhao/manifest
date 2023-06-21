@@ -12,7 +12,7 @@
                  "couchbase-lite-core"
              ]
          },
-         "couchbase-lite-core/beryllium-android.xml": {
+         "couchbase-lite-core/beryllium-toybuild.xml": {
              "release_name": "Couchbase Lite Core - Beryllium",
              "production": true,
              "interval": 90,
