@@ -19,10 +19,7 @@
              "restricted": false,
              "start_build": 1,
              "keep_git": true,
-             "trigger_blackduck": true,
-             "module_projects": [
-                 "couchbase-lite-core"
-             ]
+             "trigger_blackduck": true
          },
          "couchbase-lite-core/helium.xml": {
              "release_name": "Couchbase Lite Core - Helium",
