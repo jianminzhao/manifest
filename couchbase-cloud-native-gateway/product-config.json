@@ -1,0 +1,13 @@
+{
+    "manifests": {
+        "couchbase-cloud-native-gateway/master.xml": {
+            "production": true,
+            "interval": 1500,
+            "restricted": false,
+            "start_build": 123,
+            "trigger_blackduck": true,
+            "jenkins_job": "couchbase-k8s-microservice-build",
+            "keep_git": true
+        }
+    }
+}
