@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote name="goxdcr_mirror" fetch="https://github.com/nelio2k/"/>
+
   <!-- We're a modified trinity, for now -->
-  <include name="capella-analytics/trinity_stable.xml"/>
+  <include name="couchbase-server/trinity.xml"/>
 
   <!-- Pick up Analytics projects from master branches -->
-  <extend-project name="cbas-core" revision="master" />
-  <extend-project name="asterixdb" revision="master" />
-  <extend-project name="analytics-dcp-client" revision="master" />
-  <extend-project name="cbas" revision="master" />
-  <extend-project name="cbas-ui" revision="master" />
+  <extend-project name="goxdcr" remote="goxdcr_mirror" path="goproj/src/github.com/couchbase/goxdcr"/>
 
   <!-- Replace build repo to provide different annotations -->
   <!-- Don't use just extend-project as that leaves in other annotations -->
