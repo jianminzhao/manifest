@@ -33,10 +33,10 @@
   <project name="eventing"  path="goproj/src/github.com/couchbase/eventing" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="kv_engine" groups="kv,bsl"/>
-  <project name="libcouchbase" revision="refs/tags/3.3.8"/>
+  <project name="libcouchbase" revision="684931e59cd87e0c6292e8142c2b18897be5b10c"/>
   <project name="magma" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
   <project name="ns_server" groups="bsl"/>
-  <project name="chronicle" revision="7de1bde10de09979908c30813d88fe2d73b425ed" path="ns_server/deps/chronicle"/>
+  <project name="chronicle" revision="914d26d323c8275e667dd441e645a5bad25e0903" path="ns_server/deps/chronicle"/>
   <project name="vbmap"/>
   <project name="phosphor" groups="bsl,kv"/>
   <project name="platform" groups="bsl,kv"/>
@@ -94,7 +94,7 @@
   <project name="go-metrics"     remote="couchbasedeps" revision="cf1acfcdf4751e0554ffa765d03e479ec491cad6"  path="godeps/src/github.com/rcrowley/go-metrics" />
   <project name="golang-snappy"  remote="couchbasedeps" revision="723cc1e459b8eea2dea4583200fd60757d40097a" path="godeps/src/github.com/golang/snappy"/>
   <project name="golang-tools"   remote="couchbasedeps" revision="a28dfb48e06b2296b66678872c2cb638f0304f20" path="godeps/src/golang.org/x/tools"/>
-  <project name="crypto"         remote="couchbasedeps" revision="630584e8d5aaa1472863b49679b2d5548d80dcba" path="godeps/src/golang.org/x/crypto"/>
+  <project name="crypto"         remote="couchbasedeps" revision="refs/tags/v0.15.0"                        path="godeps/src/golang.org/x/crypto"/>
   <project name="sys"            remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" path="godeps/src/golang.org/x/sys"/>
   <project name="pkcs8"          remote="couchbasedeps" revision="refs/tags/v1.1"                           path="godeps/src/github.com/youmark/pkcs8"/>
   <project name="client_golang"  remote="couchbasedeps" revision="refs/tags/v1.12.1"                        path="godeps/src/github.com/prometheus/client_golang"/>

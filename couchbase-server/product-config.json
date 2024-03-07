@@ -22,10 +22,22 @@
             "release_name": "Trinity",
             "parent": "branch-master.xml",
             "production": true,
+            "start_build": 3000,
+            "trigger_blackduck": true,
+            "interval": 365,
+            "keep_git": true
+        },
+        "couchbase-server/trinity/7.6.0.xml": {
+            "release": "trinity",
+            "release_name": "Trinity",
+            "parent": "couchbase-server/trinity.xml",
+            "production": true,
             "start_build": 1000,
             "trigger_blackduck": true,
-            "interval": 188,
-            "keep_git": true
+            "interval": 117,
+            "keep_git": true,
+            "restricted": true,
+            "approval_ticket": "MB-56661"
         },
         "couchbase-server/elixir.xml": {
             "release": "elixir",
@@ -40,27 +52,39 @@
         },
         "couchbase-server/neo.xml": {
             "release": "neo",
-            "release_name": "Neo (7.2.4)",
+            "release_name": "Neo (7.2.5)",
             "parent": "branch-master.xml",
+            "production": true,
+            "start_build": 7500,
+            "trigger_blackduck": true,
+            "interval": 241,
+            "keep_git": true,
+            "restricted": true,
+            "approval_ticket": "MB-59916"
+        },
+        "couchbase-server/neo/7.2.4.xml": {
+            "release": "neo",
+            "release_name": "Neo (7.2.4-MP3)",
+            "parent": "couchbase-server/neo.xml",
             "production": true,
             "start_build": 6900,
             "trigger_blackduck": true,
             "interval": 117,
             "keep_git": true,
             "restricted": true,
-            "approval_ticket": "MB-57829"
+            "approval_ticket": "MB-61023"
         },
         "couchbase-server/neo/7.2.3.xml": {
             "release": "neo",
-            "release_name": "Neo (7.2.3)",
+            "release_name": "Neo (7.2.3-MP2)",
             "parent": "couchbase-server/neo.xml",
             "production": true,
             "start_build": 6700,
             "trigger_blackduck": true,
-            "interval": 119,
+            "interval": 1508,
             "keep_git": true,
             "restricted": true,
-            "approval_ticket": "MB-59178"
+            "approval_ticket": "MB-59617"
         },
         "couchbase-server/neo/7.2.2.xml": {
             "release": "neo",
@@ -69,7 +93,7 @@
             "production": true,
             "start_build": 6400,
             "trigger_blackduck": true,
-            "interval": 119,
+            "interval": 1527,
             "keep_git": true,
             "restricted": true,
             "approval_ticket": "MB-58730"
@@ -81,7 +105,7 @@
             "production": true,
             "start_build": 5000,
             "trigger_blackduck": true,
-            "interval": 119,
+            "interval": 1519,
             "keep_git": true,
             "restricted": true,
             "approval_ticket": "MB-56561"
@@ -94,22 +118,23 @@
             "start_build": 5000,
             "trigger_blackduck": true,
             "interval": 1447,
+            "do-build": false,
             "keep_git": true,
             "restricted": true,
             "approval_ticket": "MB-57681"
         },
         "couchbase-server/neo/7.1.6.xml": {
             "release": "neo",
-            "release_name": "Neo (7.1.6-MP1)",
+            "release_name": "Neo (7.1.6-MP6)",
             "parent": "couchbase-server/neo.xml",
             "production": true,
             "start_build": 3950,
             "trigger_blackduck": true,
-            "interval": 145,
+            "interval": 1498,
             "do-build": true,
             "keep_git": true,
             "restricted": true,
-            "approval_ticket": "MB-59433"
+            "approval_ticket": "MB-61012"
         },
         "couchbase-server/neo/7.1.5.xml": {
             "release": "neo",
@@ -119,7 +144,7 @@
             "start_build": 3800,
             "trigger_blackduck": true,
             "interval": 1489,
-            "do-build": true,
+            "do-build": false,
             "keep_git": true,
             "restricted": true,
             "approval_ticket": "MB-58798"
@@ -132,7 +157,7 @@
             "start_build": 3630,
             "trigger_blackduck": true,
             "interval": 1449,
-            "do-build": true,
+            "do-build": false,
             "keep_git": true,
             "restricted": true,
             "approval_ticket": "MB-57406"
@@ -145,7 +170,7 @@
             "start_build": 3470,
             "trigger_blackduck": true,
             "interval": 1446,
-            "do-build": true,
+            "do-build": false,
             "keep_git": true,
             "restricted": true,
             "approval_ticket": "MB-55057"
@@ -158,7 +183,7 @@
             "start_build": 3300,
             "trigger_blackduck": true,
             "interval": 1502,
-            "do-build": true,
+            "do-build": false,
             "keep_git": true,
             "restricted": true,
             "approval_ticket": "MB-55432"
@@ -171,6 +196,7 @@
             "start_build": 1000,
             "trigger_blackduck": true,
             "interval": 1501,
+            "do-build": false,
             "keep_git": true,
             "restricted": true,
             "approval_ticket": "MB-52510"
@@ -207,7 +233,7 @@
             "production": true,
             "start_build": 7649,
             "trigger_blackduck": true,
-            "interval": 125,
+            "interval": 1604,
             "keep_git": true,
             "restricted": true,
             "approval_ticket": "MB-56304"
@@ -220,6 +246,7 @@
             "start_build": 7285,
             "trigger_blackduck": true,
             "interval": 1445,
+            "do-build": false,
             "keep_git": true,
             "restricted": true,
             "approval_ticket": "MB-48997"
@@ -387,6 +414,7 @@
             "start_build": 3300,
             "trigger_blackduck": false,
             "interval": 1440,
+            "do-build": false,
             "keep_git": true,
             "restricted": true,
             "approval_ticket": "MB-43894"
