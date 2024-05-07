@@ -1,0 +1,31 @@
+{
+    "manifests": {
+        "cbdeps/faiss/main.xml": {
+            "production": true,
+            "restricted": false,
+            "start_build": 1,
+            "jenkins_server": "server.jenkins.couchbase.com",
+            "jenkins_job": "cbdeps-build",
+            "platforms": [ "linux",
+                        "linux:aarch64",
+                        "macos",
+                        "macos:arm64",
+                        "windows_msvc2022" ],
+            "do-build": false,
+            "keep_git": true
+        },
+        "cbdeps/faiss/unstable.xml": {
+            "restricted": false,
+            "jenkins_server": "server.jenkins.couchbase.com",
+            "jenkins_job": "cbdeps-build",
+            "platforms": [ "linux",
+                        "linux:aarch64",
+                        "macos",
+                        "macos:arm64",
+                        "windows_msvc2022" ],
+            "do-build": true,
+            "toy-build": true,
+            "keep_git": true
+        }
+    }
+}

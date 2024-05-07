@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org"/>
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org"/>
+  <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org"/>
+
+  <default remote="couchbase" revision="master"/>
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- Build support - build scripts, etc.                -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <project name="build" path="cbbuild" groups="notdefault" revision="fa5df77677945a629aeb82aeaa3d43218df2a88d">
+    <annotation name="VERSION" value="3.3.0" keep="true"/>
+  </project>
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- Couchbase-owned Java-language repositories         -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <project remote="couchbaselabs-priv" name="couchbase-lite-java-ee-root" path="cbl-java"/>
+  <project remote="couchbaselabs" name="couchbase-lite-java-tools" path="cbl-java/etc" revision="3e79b6b65d9119ae81c1074f4208fd6978eedf56"/>
+  <project name="couchbase-lite-java-common" path="cbl-java/common" revision="0efdf824eac075de730a5ae654a670263c5a7b7d"/>
+  <project name="couchbase-lite-java-ce" path="cbl-java/ce" revision="b6121443097f3fe43101ef84e5831636e71fc8db"/>
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- Couchbase-owned Couchbase Lite Core Tools          -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <project remote="couchbaselabs" name="litecore-download-script" path="cbl-java/core_tools" revision="a25b27b50baed58a7b05f8b8151a3269b5007044"/>
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- Couchbase Licensing and Legal                      -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <project name="product-texts" path="cbl-java/legal" revision="master"/>
+</manifest>

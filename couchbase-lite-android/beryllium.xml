@@ -4,7 +4,7 @@
   <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org"/>
   <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org"/>
 
-  <default remote="couchbase" revision="master"/>
+  <default remote="couchbase" revision="android/release/3.2"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Build support - build scripts, etc.                -->
@@ -17,9 +17,9 @@
   <!-- Couchbase-owned Java-language repositories         -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project remote="couchbaselabs-priv" name="couchbase-lite-java-ee-root" path="cbl-java"/>
-  <project remote="couchbaselabs" name="couchbase-lite-java-tools" path="cbl-java/etc" revision="32915c8b3d898fef7a7df8ebe7dec8dd26a2ed94"/>
-  <project name="couchbase-lite-java-common" path="cbl-java/common" revision="6cb64e9aa6fe4ac4cb26005b3f689ce28632dd19"/>
-  <project name="couchbase-lite-java-ce" path="cbl-java/ce" revision="019d0097620ee78b444a48fcf70a075fddf0b50c"/>
+  <project remote="couchbaselabs" name="couchbase-lite-java-tools" path="cbl-java/etc" revision="3e79b6b65d9119ae81c1074f4208fd6978eedf56"/>
+  <project name="couchbase-lite-java-common" path="cbl-java/common" revision="6d3ae3f7c0441fddf96f1dd854c960ab8372b29f"/>
+  <project name="couchbase-lite-java-ce" path="cbl-java/ce" revision="1ca2c5bcb749a2970defaf3220521c6f4fa6dc89"/>
   
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase-owned Couchbase Lite Core Tools          -->

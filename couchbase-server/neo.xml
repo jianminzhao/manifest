@@ -33,7 +33,7 @@
   <project name="eventing" revision="neo" path="goproj/src/github.com/couchbase/eventing" groups="notdefault,enterprise"/>
   <project name="eventing-ee" revision="neo" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="kv_engine" revision="neo" groups="kv,bsl"/>
-  <project name="libcouchbase" revision="refs/tags/3.3.5"/>
+  <project name="libcouchbase" revision="refs/tags/3.3.12"/>
   <project name="magma" revision="neo" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv"/>
   <project name="ns_server" revision="neo" groups="bsl"/>
   <project name="chronicle" revision="7de1bde10de09979908c30813d88fe2d73b425ed" path="ns_server/deps/chronicle"/>
@@ -112,8 +112,8 @@
   <project name="HdrHistogram_c" remote="couchbasedeps" revision="caed837aa163421a637222157b3f6353b4ca831a" path="third_party/HdrHistogram_c" groups="kv"/>
 
   <!-- Couchbase internal build infrastructure -->
-  <project name="build" revision="neo" path="cbbuild" groups="notdefault,build">
-    <annotation name="VERSION" value="7.2.5" keep="true"/>
+  <project name="build" revision="d8a9c878b2a7ae1bb8354d54c05a386b7ffd76a7" path="cbbuild" groups="notdefault,build">
+    <annotation name="VERSION" value="7.2.6" keep="true"/>
     <annotation name="BSL_PRODUCT" value="Couchbase Server" keep="true"/>
     <annotation name="BSL_VERSION" value="7.2" keep="true"/>
     <annotation name="BSL_CHANGE_DATE" value="April 1, 2026" keep="true"/>
@@ -121,5 +121,5 @@
   <project name="voltron" remote="couchbase-priv" revision="neo" groups="notdefault,packaging"/>
   <project name="couchdbx-app" groups="notdefault,packaging" revision="2328f84c5f1ad7d9a60a256baef60b8901fa58f0"/>
   <project name="product-metadata" groups="notdefault,packaging" revision="ff7c24047435e393698847ec5147716017048636"/>
-  <project name="golang" revision="main" remote="couchbaselabs" groups="kv"/>
+  <project name="golang" revision="supported-newer-1.21" remote="couchbaselabs" groups="kv"/>
 </manifest>

@@ -16,13 +16,13 @@
   <project name="couchbase-lite-c" remote="couchbase">
     <copyfile src="jenkins/CMakeLists.txt" dest="CMakeLists.txt"/>
   </project>
-  <project name="couchbase-lite-c-ee" revision="main" remote="couchbase-priv" groups="notdefault,enterprise"/>
+  <project name="couchbase-lite-c-ee" remote="couchbase-priv" groups="notdefault,enterprise"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase-owned Couchbase Lite Core and EE         -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <project name="couchbase-lite-core" revision="0da8b5912a6381e70f4747379237e1444a4a92fc" path="couchbase-lite-c/vendor/couchbase-lite-core"/>
-  <project name="couchbase-lite-core-EE" revision="6a5fc13a3edc2408d1148ca81698c77cf4af73ca" path="couchbase-lite-c-ee/couchbase-lite-core-EE" remote="couchbase-priv" groups="notdefault, enterprise"/>
+  <project name="couchbase-lite-core" revision="01c89921180b33ae0f07368e6f704d9b6c294d83" path="couchbase-lite-c/vendor/couchbase-lite-core"/>
+  <project name="couchbase-lite-core-EE" revision="6bab5db9bd80bd4577a62932dc1ab819cd5097e8" path="couchbase-lite-c-ee/couchbase-lite-core-EE" remote="couchbase-priv" groups="notdefault, enterprise"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase-owned utility libraries                  -->
@@ -48,6 +48,6 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="product-texts" path="product-texts" revision="master"/>
   <project name="build" path="cbbuild" revision="cf20ab9c0f7d81838212b1f2d719903ffb4a4d9e">
-    <annotation name="VERSION" value="3.1.6" keep="true"/>
+    <annotation name="VERSION" value="3.1.7" keep="true"/>
   </project>
 </manifest>
