@@ -32,7 +32,7 @@
   <project name="plasma" revision="2b8dba73ad4e3c31ef64e6a58f8315fd33165287" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="eventing" revision="c0e682cb65eec9a0636525c1b6edfd328d4b08a8" path="goproj/src/github.com/couchbase/eventing" groups="notdefault,enterprise"/>
   <project name="eventing-ee" revision="bad01b76913b1d740a590722e3494ed671102927" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" groups="notdefault,enterprise"/>
-  <project name="kv_engine" revision="d6f7f5d3394c62e884605eb00b66846c1426bb85" groups="kv,bsl"/>
+  <project name="kv_engine" revision="7.2.5" groups="kv,bsl"/>
   <project name="libcouchbase" revision="refs/tags/3.3.12"/>
   <project name="magma" revision="7afa54a0b446ecb949937bcee40f62d66153e564" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv"/>
   <project name="ns_server" revision="1ec29f122985a28a57c79355988814e6d1e7fabd" groups="bsl"/>
@@ -57,9 +57,9 @@
   </project>
   <project name="udf-api" path="goproj/src/github.com/couchbase/udf-api" revision="b2788ae3d412356a330b36d7f38ad2c66edb5879"/>
   <!-- Analytics additions -->
-  <project name="cbas-core" revision="ab1ad606314a953950baf5819907cbd4f57a87f0" path="analytics" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
-  <project name="asterixdb" revision="40cfb8705b1255c857ac31434602134929328b5a" path="analytics/asterixdb" groups="notdefault,enterprise,analytics"/>
-  <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="8ff0b45151ffad706a4fb5a006cd14ac2b14d826" groups="notdefault,enterprise,analytics"/>
+  <project name="cbas-core" revision="7.2.5" path="analytics" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
+  <project name="asterixdb" revision="7.2.5" path="analytics/asterixdb" groups="notdefault,enterprise,analytics"/>
+  <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="49bab9856c1d87c913a8785d7a6ea1d15c4345e7" groups="notdefault,enterprise,analytics"/>
   <project name="couchbase-jvm-core" path="analytics/couchbase-jvm-core" revision="refs/tags/1.7.24" groups="notdefault,enterprise,analytics"/>
   <project name="cbas" revision="f1ae3d4c9a75bdead71d3fd2df882ae8f9eb10f9" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
   <project name="cbas-ui" groups="notdefault,enterprise,analytics" revision="19082ec66938e0c85b6edcb4eba79d10de59d22a"/>

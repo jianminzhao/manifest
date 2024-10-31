@@ -6,25 +6,38 @@
             "start_build": 1,
             "jenkins_server": "server.jenkins.couchbase.com",
             "jenkins_job": "cbdeps-build",
-            "platforms": [ "linux",
-                        "linux:aarch64",
-                        "macos",
-                        "macos:arm64",
-                        "windows_msvc2022" ],
-            "do-build": false,
-            "keep_git": true
-        },
-        "cbdeps/faiss/unstable.xml": {
-            "restricted": false,
-            "jenkins_server": "server.jenkins.couchbase.com",
-            "jenkins_job": "cbdeps-build",
+            "jenkins_job_parameters": {
+                "AUTO_PUBLISH": true,
+                "PROFILES": "-generic -avx2"
+            },
             "platforms": [ "linux",
                         "linux:aarch64",
                         "macos",
                         "macos:arm64",
                         "windows_msvc2022" ],
             "do-build": true,
-            "toy-build": true,
+            "interval": 120,
+            "ignore_projects": [ "build-tools" ],
+            "keep_git": true
+        },
+        "cbdeps/faiss/unstable.xml": {
+            "release": "unstable",
+            "restricted": false,
+            "jenkins_server": "server.jenkins.couchbase.com",
+            "jenkins_job": "cbdeps-build",
+            "jenkins_job_parameters": {
+                "AUTO_PUBLISH": true,
+                "PROFILES": "-generic -avx2"
+            },
+            "platforms": [ "linux",
+                        "linux:aarch64",
+                        "macos",
+                        "macos:arm64",
+                        "windows_msvc2022" ],
+            "do-build": true,
+            "start_build": 10000,
+            "interval": 120,
+            "ignore_projects": [ "build-tools" ],
             "keep_git": true
         }
     }
