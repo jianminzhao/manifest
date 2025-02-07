@@ -63,6 +63,15 @@
                  "couchbase-lite-core"
              ]
          },
+         "couchbase-lite-core/3.1.9-vf1.xml": {
+             "release_name": "Couchbase Lite Core - release/3.1.9.1",
+             "production": true,
+             "interval": 90,
+             "restricted": false,
+             "start_build": 1,
+             "keep_git": true,
+             "trigger_blackduck": true
+         },
          "couchbase-lite-core/helium-toybuild.xml": {
              "release_name": "Couchbase Lite Core - Helium",
              "production": true,
