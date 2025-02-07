@@ -12,15 +12,20 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase-owned Couchbase Lite Core and EE         -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <project name="couchbase-lite-core">
-       <copyfile src="jenkins/CMakeLists.txt" dest="CMakeLists.txt"/>
+  <project name="couchbase-lite-core" groups="bsl">
+    <copyfile src="jenkins/CMakeLists.txt" dest="CMakeLists.txt"/>
+    <annotation name="BSL_REVIEW" value="github-pr" keep="true"/>
+    <annotation name="BSL_REVIEWERS" value="jianminzhao,callumbirks" keep="true"/>
   </project>
   <project name="couchbase-lite-core-EE" remote="couchbase-priv" groups="notdefault,enterprise"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase-owned utility libraries                  -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <project name="fleece" remote="couchbase" revision="adec5e362a0e8f7051982581c3b60427905de3d2" path="couchbase-lite-core/vendor/fleece"/>
+  <project name="fleece" remote="couchbase" revision="adec5e362a0e8f7051982581c3b60427905de3d2" path="couchbase-lite-core/vendor/fleece" groups="bsl" dest-branch="release/3.2">
+    <annotation name="BSL_REVIEW" value="github-pr" keep="true"/>
+    <annotation name="BSL_REVIEWERS" value="snej,pasin" keep="true"/>
+  </project>
   <project name="jsonsl" remote="snej" revision="684b60f9af68b8c397422e74d0c2dd206de16a2c" path="couchbase-lite-core/vendor/fleece/vendor/jsonsl"/>
   <project name="sqlite3-unicodesn" remote="couchbasedeps" revision="56f70205de560e96a6ef4766839e4fa67e0d0749" path="couchbase-lite-core/vendor/sqlite3-unicodesn"/>
   <project name="couchbase-lite-core.wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" path="couchbase-lite-core/wiki"/>
@@ -40,6 +45,9 @@
   <!-- Build support - build scripts, etc.                -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="build" path="cbbuild" revision="b0873a8e5340301c425e2e3c0f93da95f3a027cb">
-    <annotation name="VERSION" value="3.2.1" keep="true"/>
+    <annotation name="VERSION" value="3.2.2" keep="true"/>
+    <annotation name="BSL_PRODUCT" value="Couchbase Lite" keep="true"/>
+    <annotation name="BSL_VERSION" value="3.2" keep="true"/>
+    <annotation name="BSL_CHANGE_DATE" value="February 28, 2029" keep="true"/>
   </project>
 </manifest>
