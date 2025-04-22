@@ -14,7 +14,7 @@
   <project name="cbft" revision="7.6.5"/>
   <project name="cbftx" remote="couchbase-priv" groups="notdefault,enterprise" revision="7d906e2891e26432a6b5441666e5d69fea53015f"/>
   <project name="hebrew" remote="couchbase-priv" groups="notdefault,enterprise" revision="c57616b187889a5318688f49817ccaceb9c098b9"/>
-  <project name="cbgt" revision="b8ea3b881b6b0877218b6dc2dcaa6e151357b3a3"/>
+  <project name="cbgt" revision="066cc3bed17ba9c274b62f52eda4570b240eaac4"/>
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="b93a39e6c46c3de1a73153d49579012f0737592b"/>
   <project name="couchbase-cli" groups="kv" revision="853137ffe96629a9fba24b765cf0c7200a7e16d1"/>
   <project name="couchdb" revision="a7cd1de87bc486e953167bd61bc73e100067771a" dest-branch="unstable"/>
@@ -60,7 +60,7 @@
   <!-- Analytics additions -->
   <project name="cbas-core" path="analytics" revision="7.6.5" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
   <project name="asterixdb" path="analytics/asterixdb" revision="7.6.5" groups="notdefault,enterprise,analytics"/>
-  <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="13238588ecf173dabad7f0b93e1abaaae90e27b1" groups="notdefault,enterprise,analytics"/>
+  <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="7.6.5" groups="notdefault,enterprise,analytics"/>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" revision="ea9d16d081777f878b8ec37b2d3be9080e640dfd" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
   <project name="cbas-ui" revision="704db180d01de15f70cacc9fc11c5d8d8d4ff965" groups="notdefault,enterprise,analytics"/>
 
