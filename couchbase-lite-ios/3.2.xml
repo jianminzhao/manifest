@@ -20,7 +20,7 @@
   <!-- Couchbase-owned Couchbase Lite Core                -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="couchbase-lite-core-EE" remote="couchbase-priv" revision="6cc2f7f1e2a097679d2e08ab86369707324faacf" path="couchbase-lite-ios-ee/couchbase-lite-core-EE" groups="enterprise,notdefault"/>
-  <project name="couchbase-lite-core" revision="641301cd42aec4947d9aeed602be9c9b0fab1a3d" path="couchbase-lite-ios/vendor/couchbase-lite-core"/>
+  <project name="couchbase-lite-core" revision="51796677ca3ff9e752a5fc212695cd374379ad69" path="couchbase-lite-ios/vendor/couchbase-lite-core"/>
   <project name="couchbase-lite-core.wiki" revision="9dd7deb1b42253ea3f50f447718ebf5eb2387394" path="couchbase-lite-ios/vendor/couchbase-lite-core/wiki"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -49,6 +49,6 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="product-texts" revision="master"/>
   <project name="build" revision="844e2484067053d7af88e706a814766265bf03df">
-    <annotation name="VERSION" value="3.2.3" keep="true"/>
+    <annotation name="VERSION" value="3.2.5" keep="true"/>
   </project>
 </manifest>

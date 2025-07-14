@@ -9,15 +9,15 @@
   <default remote="couchbase" revision="master" />
 
   <!-- Core Couchbase Server projects -->
-  <project name="backup" remote="couchbase-priv" path="backup" groups="backup,notdefault,enterprise"/>
+  <project name="backup" remote="couchbase-priv" path="backup" groups="backup,notdefault,enterprise" revision="morpheus"/>
   <project name="bhive"  path="goproj/src/github.com/couchbase/bhive" remote="couchbase-priv" revision="main" groups="notdefault,enterprise"/>
-  <project name="cbbs" remote="couchbase-priv" groups="backup,notdefault,enterprise"/>
+  <project name="cbbs" remote="couchbase-priv" groups="backup,notdefault,enterprise" revision="morpheus"/>
   <project name="cbft"/>
   <project name="cbftx" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="hebrew" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="cbgt"/>
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" groups="bsl"/>
-  <project name="couchbase-cli" groups="kv"/>
+  <project name="couchbase-cli" groups="kv" revision="morpheus"/>
   <project name="couchdb" dest-branch="unstable"/>
   <project name="couchstore" groups="kv"/>
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" />
@@ -34,12 +34,12 @@
   <project name="eventing"    path="goproj/src/github.com/couchbase/eventing" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="kv_engine" groups="kv,bsl"/>
-  <project name="libcouchbase" revision="d6769941fdcdae51966d7c5dc69d40523456518c"/>
+  <project name="libcouchbase" revision="refs/tags/3.3.16"/>
   <project name="magma" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
   <project name="fusion" revision="main" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
-  <project name="ns_server" groups="bsl"/>
+  <project name="ns_server" revision="morpheus" groups="bsl"/>
   <project name="vbmap"/>
-  <project name="phosphor" groups="bsl,kv"/>
+  <project name="phosphor" revision="478dfeb2001957e6933d17287e50dfdc8534072d" groups="bsl,kv"/>
   <project name="platform" groups="bsl,kv"/>
   <project name="product-texts"/>
   <project name="query-ee"  path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" groups="notdefault,enterprise"/>
@@ -47,7 +47,7 @@
   <project name="query-ui" groups="bsl"/>
   <project name="regulator" revision="main" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="sigar" groups="kv"/>
-  <project name="subjson" groups="bsl,kv"/>
+  <project name="subjson" revision="ae77e5120fa08e93ba0f541670c46a4a3d1825cc" groups="bsl,kv"/>
   <project name="testrunner"/>
   <project name="tlm" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
@@ -82,7 +82,6 @@
   <!-- C/C++ support libraries -->
   <project name="gsl-lite"       remote="couchbasedeps" revision="refs/tags/v0.38.1" path="third_party/gsl-lite" groups="kv"/>
   <project name="HdrHistogram_c" remote="couchbasedeps" revision="9ead6b88adbf8d6131e5ae7a3a699c477a3b4195" path="third_party/HdrHistogram_c" groups="kv"/>
-  <project name="simdutf"        remote="couchbasedeps" revision="refs/tags/v3.2.14" path="third_party/simdutf" groups="kv"/>
 
   <!-- Couchbase internal build infrastructure -->
   <project name="build"      path="cbbuild"           groups="notdefault,build">

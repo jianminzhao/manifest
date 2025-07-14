@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- This manifest is used to build a traditional Couchbase Server build
+       configured with Phoenix branches. This enables the ns_server CV to run
+       with the configuration it expects, e.g. not an Enterprise Analytics
+       build. See https://jira.issues.couchbase.com/browse/CBD-6385. -->
+
+  <!-- We consume a manifest based upon a validated Morpheus build -->
+  <include name="enterprise-analytics/base-manifest_phoenix.xml"/>
+
+  <!-- Pick up the ns_server project from the phoenix branch -->
+  <extend-project name="ns_server" revision="phoenix" dest-branch="phoenix" />
+
+  <!-- Pick up Analytics projects from master & phoenix branches -->
+  <extend-project name="cbas-core" revision="phoenix" dest-branch="phoenix" />
+  <extend-project name="asterixdb" revision="phoenix" dest-branch="phoenix" />
+  <extend-project name="analytics-dcp-client" revision="master" dest-branch="master" />
+  <extend-project name="cbas" revision="master" dest-branch="master" />
+  <extend-project name="cbas-ui" revision="master" dest-branch="master" />
+
+  <!-- Update build project to provide different annotations -->
+  <remove-project name="build"/>
+  <project name="build" path="cbbuild" revision="ba76b34e3a349a3281804c9b97ee0706d8893c36" upstream="master" dest-branch="master" groups="notdefault,build">
+    <annotation name="VERSION" value="7.9.0"     keep="true"/>
+    <annotation name="RELEASE" value="phoenix"   keep="true"/>
+  </project>
+
+</manifest>

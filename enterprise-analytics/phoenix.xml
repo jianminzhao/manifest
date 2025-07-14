@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="couchbase-server/phoenix.xml"/>
+
+  <!-- replicate the extended projects from the couchbase-server/phoenix.xml manifest to make the
+     restricted branch check go -->
+  <extend-project name="ns_server" revision="phoenix" dest-branch="phoenix" />
+  <extend-project name="asterixdb" revision="phoenix" dest-branch="phoenix" />
+  <extend-project name="cbas-core" revision="phoenix" dest-branch="phoenix" />
+  <extend-project name="analytics-dcp-client" revision="master" dest-branch="master" />
+  <extend-project name="cbas" revision="master" dest-branch="master" />
+  <extend-project name="cbas-ui" revision="master" dest-branch="master" />
+
+  <!-- Add the columnar-ui project -->
+  <project name="columnar-ui-v1" groups="notdefault,build,enterprise,analytics" />
+
+  <!-- pick up CLI patch for MB-67581 -->
+  <extend-project name="couchbase-cli" revision="0597caf06922c965a85fc317bc20a3b37ac83634" />
+
+  <!-- Update build project to provide different annotations -->
+  <remove-project name="build"/>
+  <project name="build" path="cbbuild" revision="ba76b34e3a349a3281804c9b97ee0706d8893c36" upstream="master" dest-branch="master" groups="notdefault,build">
+    <annotation name="VERSION" value="2.0.0"     keep="true"/>
+    <annotation name="SERVER_VERSION" value="7.9.0"     keep="true"/>
+    <annotation name="SERVER_BLD_NUM" value="8.0.0-3439"     keep="true"/>
+    <annotation name="SERVER_RELEASE" value="phoenix"     keep="true"/>
+    <annotation name="COLUMNAR" value="true"     keep="true"/>
+    <annotation name="COLUMNAR_COMPAT_VERSION" value="2.0.0"/>
+    <annotation name="MIN_SUPPORTED_COLUMNAR_COMPAT_VERSION" value="2.0.0"/>
+    <annotation name="MIN_SUPPORTED_COLUMNAR_PROVISIONED_COMPAT_VERSION" value="1.0.5"/>
+  </project>
+
+  <remove-project name="query"/>
+  <remove-project name="query-ee"/>
+  <remove-project name="indexing"/>
+  <remove-project name="goxdcr"/>
+  <remove-project name="xdcrDiffer"/>
+  <remove-project name="gometa"/>
+  <remove-project name="cbft"/>
+  <remove-project name="cbftx"/>
+  <remove-project name="cbgt"/>
+  <remove-project name="hebrew"/>
+  <remove-project name="eventing"/>
+  <remove-project name="eventing-ee"/>
+  <remove-project name="cbbs"/>
+  <remove-project name="n1fty"/>
+  <remove-project name="bhive"/>
+  <remove-project name="plasma"/>
+  <remove-project name="fusion"/>
+  <remove-project name="gocbcrypto"/>
+  <!-- we can't remove the following at least while we have a test dependency on samples
+  <remove- project name="magma"/>
+  <remove- project name="backup"/>
+ -->
+  <remove-project name="udf-api"/>
+  <remove-project name="godbc"/>
+  <remove-project name="nitro"/>
+</manifest>

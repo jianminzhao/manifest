@@ -35,10 +35,11 @@
   <project name="eventing"  path="goproj/src/github.com/couchbase/eventing" groups="notdefault,enterprise"/>
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="kv_engine" groups="kv"/>
-  <project name="libcouchbase" revision="d6769941fdcdae51966d7c5dc69d40523456518c"/>
+  <project name="libcouchbase" revision="refs/tags/3.3.16"/>
   <project name="magma" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
   <project name="fusion" revision="main" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
   <project name="ns_server"/>
+  <project name="server-ui" remote="couchbase-priv" revision="main"/>
   <project name="vbmap"/>
   <project name="phosphor" groups="kv"/>
   <project name="platform" groups="kv"/>
@@ -83,7 +84,6 @@
   <!-- C/C++ support libraries -->
   <project name="gsl-lite"       remote="couchbasedeps" revision="refs/tags/v0.38.1" path="third_party/gsl-lite" groups="kv"/>
   <project name="HdrHistogram_c" remote="couchbasedeps" revision="9ead6b88adbf8d6131e5ae7a3a699c477a3b4195" path="third_party/HdrHistogram_c" groups="kv"/>
-  <project name="simdutf"        remote="couchbasedeps" revision="refs/tags/v3.2.14" path="third_party/simdutf" groups="kv"/>
 
   <!-- Couchbase internal build infrastructure -->
   <project name="build"      path="cbbuild"           groups="notdefault,build">
