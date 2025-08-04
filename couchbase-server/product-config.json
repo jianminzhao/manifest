@@ -45,24 +45,36 @@
             "release_name": "Trinity",
             "parent": "branch-master.xml",
             "production": true,
-            "start_build": 6300,
+            "start_build": 7000,
             "trigger_blackduck": true,
-            "interval": 121,
+            "interval": 244,
             "keep_git": true,
             "restricted": true,
             "approval_ticket": "MB-65438"
         },
+        "couchbase-server/trinity/7.6.7.xml": {
+            "release": "trinity",
+            "release_name": "Trinity (7.6.7)",
+            "parent": "couchbase-server/trinity.xml",
+            "production": true,
+            "start_build": 6700,
+            "trigger_blackduck": true,
+            "interval": 127,
+            "keep_git": true,
+            "restricted": true,
+            "approval_ticket": "MB-67558"
+        },
         "couchbase-server/trinity/7.6.6.xml": {
             "release": "trinity",
-            "release_name": "Trinity (7.6.6-MP3)",
+            "release_name": "Trinity (7.6.6-MP2)",
             "parent": "couchbase-server/trinity.xml",
             "production": true,
             "start_build": 6000,
             "trigger_blackduck": true,
-            "interval": 121,
+            "interval": 720,
             "keep_git": true,
             "restricted": true,
-            "approval_ticket": "MB-67558"
+            "approval_ticket": "MB-67217"
         },
         "couchbase-server/trinity/7.6.5.xml": {
             "release": "trinity",
@@ -71,7 +83,7 @@
             "production": true,
             "start_build": 5700,
             "trigger_blackduck": true,
-            "interval": 121,
+            "interval": 720,
             "keep_git": true,
             "restricted": true,
             "approval_ticket": "MB-66632"
@@ -176,7 +188,7 @@
         },
         "couchbase-server/neo/7.2.7.xml": {
             "release": "neo",
-            "release_name": "Neo (7.2.7)",
+            "release_name": "Neo (7.2.7-MP1)",
             "parent": "couchbase-server/neo.xml",
             "production": true,
             "start_build": 8500,
@@ -184,7 +196,7 @@
             "interval": 1451,
             "keep_git": true,
             "restricted": true,
-            "approval_ticket": "MB-63045"
+            "approval_ticket": "MB-67907"
         },
         "couchbase-server/neo/7.2.6.xml": {
             "release": "neo",

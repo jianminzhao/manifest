@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="couchbase-server/phoenix.xml"/>
 
-  <!-- replicate the extended projects from the couchbase-server/phoenix.xml manifest to make the
-     restricted branch check go -->
-  <extend-project name="asterixdb" revision="phoenix" dest-branch="phoenix" />
-  <extend-project name="cbas-core" revision="phoenix" dest-branch="phoenix" />
+  <include name="enterprise-analytics/base-manifest_lumina.xml"/>
+
+  <!-- Pick up Analytics projects from master & phoenix branches -->
+  <extend-project name="cbas-core" revision="master" dest-branch="master" />
+  <extend-project name="asterixdb" revision="master" dest-branch="master" />
   <extend-project name="analytics-dcp-client" revision="master" dest-branch="master" />
   <extend-project name="cbas" revision="master" dest-branch="master" />
   <extend-project name="cbas-ui" revision="master" dest-branch="master" />
 
   <!-- Add the columnar-ui project -->
   <project name="columnar-ui-v1" groups="notdefault,build,enterprise,analytics" />
-
-  <!-- pick up CLI for MB-67581, MB-67581, MB-67727 -->
-  <extend-project name="couchbase-cli" revision="14b6f256747ba3d5d440ca1ec9b685833b2db2f0" />
-
-  <!-- pick up tlm for CBD-6401, CBD-6394 -->
-  <extend-project name="tlm" revision="7bdebed022a9cb71f8aadbe4016218ba010d779b" />
 
   <!-- pick up latest product-texts so we have the most accurate README.txt & licenses -->
   <extend-project name="product-texts" revision="master" />
@@ -31,12 +25,12 @@
   <!-- Update build project to provide different annotations -->
   <remove-project name="build"/>
   <project name="build" path="cbbuild" revision="ba76b34e3a349a3281804c9b97ee0706d8893c36" upstream="master" dest-branch="master" groups="notdefault,build">
-    <annotation name="VERSION" value="2.0.1"     keep="true"/>
-    <annotation name="SERVER_VERSION" value="7.9.0"     keep="true"/>
-    <annotation name="SERVER_BLD_NUM" value="8.0.0-3439"     keep="true"/>
-    <annotation name="SERVER_RELEASE" value="phoenix"     keep="true"/>
+    <annotation name="VERSION" value="2.1.0"     keep="true"/>
+    <annotation name="SERVER_VERSION" value="8.0.0"     keep="true"/>
+    <annotation name="SERVER_BLD_NUM" value="8.0.0-3529"     keep="true"/>
+    <annotation name="SERVER_RELEASE" value="morpheus"     keep="true"/>
     <annotation name="COLUMNAR" value="true"     keep="true"/>
-    <annotation name="COLUMNAR_COMPAT_VERSION" value="2.0.1"/>
+    <annotation name="COLUMNAR_COMPAT_VERSION" value="2.1.0"/>
     <annotation name="MIN_SUPPORTED_COLUMNAR_COMPAT_VERSION" value="2.0.0"/>
     <annotation name="MIN_SUPPORTED_COLUMNAR_PROVISIONED_COMPAT_VERSION" value="1.0.5"/>
   </project>

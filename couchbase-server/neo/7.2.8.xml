@@ -31,10 +31,10 @@
   <project name="plasma" revision="69279d773fb1cf7fb49a992e1e2ebd465f0e82ab" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="eventing" revision="5fa9ab274373d2df910139315e4625aead0b9bb9" path="goproj/src/github.com/couchbase/eventing" groups="notdefault,enterprise"/>
   <project name="eventing-ee" revision="bad01b76913b1d740a590722e3494ed671102927" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" groups="notdefault,enterprise"/>
-  <project name="kv_engine" revision="22ed832a13f0b77e77bde3d4838a9cd3b7a14c5d" groups="kv,bsl"/>
+  <project name="kv_engine" revision="7777c6728f7b27a641ae19659a2a135b8388eb35" groups="kv,bsl"/>
   <project name="libcouchbase" revision="refs/tags/3.3.13"/>
-  <project name="magma" revision="0aed8e1828edece946aabd5dceeca9b859982eee" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv"/>
-  <project name="ns_server" revision="ecfd9f8cb3e51a3effda1f62b03c0890cf005336" groups="bsl"/>
+  <project name="magma" revision="9b0624d7963af5114db5f4f9a671ffb7a2b6b8c4" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv"/>
+  <project name="ns_server" revision="neo" groups="bsl"/>
   <project name="chronicle" revision="7de1bde10de09979908c30813d88fe2d73b425ed" path="ns_server/deps/chronicle"/>
   <project name="vbmap" revision="d56dc3cbd0507f0906c9214739d9ea1ec3da5f22"/>
   <project name="phosphor" groups="bsl,kv" revision="3c73aee532d0f210fc47119b89da832f7774d9da"/>
@@ -56,9 +56,9 @@
   </project>
   <project name="udf-api" path="goproj/src/github.com/couchbase/udf-api" revision="b2788ae3d412356a330b36d7f38ad2c66edb5879"/>
   <!-- Analytics additions -->
-  <project name="cbas-core" revision="neo" path="analytics" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
-  <project name="asterixdb" revision="neo" path="analytics/asterixdb" groups="notdefault,enterprise,analytics"/>
-  <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="neo" groups="notdefault,enterprise,analytics"/>
+  <project name="cbas-core" revision="0700a5d28d8e56aefd5b4ac66272d4dacd21c75f" path="analytics" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
+  <project name="asterixdb" revision="7b4c7cd245c9721cbd8eb9219396a14678663c84" path="analytics/asterixdb" groups="notdefault,enterprise,analytics"/>
+  <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="44c11fd264a17dce6f65c0afa56573327f460199" groups="notdefault,enterprise,analytics"/>
   <project name="couchbase-jvm-core" path="analytics/couchbase-jvm-core" revision="refs/tags/1.7.24" groups="notdefault,enterprise,analytics"/>
   <project name="cbas" revision="41a09e85f6084a9b7df401b684adc22dc6d91809" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
   <project name="cbas-ui" groups="notdefault,enterprise,analytics" revision="19082ec66938e0c85b6edcb4eba79d10de59d22a"/>
@@ -66,7 +66,7 @@
   <!-- Go support libraries - Couchbase-supported -->
   <!-- Some are in goproj to facilitate eventual move to Go modules -->
   <project name="n1fty" path="goproj/src/github.com/couchbase/n1fty" groups="bsl" revision="53840ff484760d0a1742d0c54e8cbcf79f1f01c5"/>
-  <project name="go_json" path="goproj/src/github.com/couchbase/go_json" revision="2936e21ca64c6efb687dd891dee1f8112e11618c"/>
+  <project name="go_json" path="goproj/src/github.com/couchbase/go_json" revision="a9e64381314b5dba8a6258a1686e1e692d3a1d9b"/>
   <project name="gomemcached" path="goproj/src/github.com/couchbase/gomemcached" groups="backup" revision="f5c18f34b5a3a0a908887f18569e3dd1d49e599f"/>
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" groups="backup" revision="0685e2541e6703c286a690320452c7adb04849cc"/>
   <project name="go-couchbase" path="goproj/src/github.com/couchbase/go-couchbase" groups="backup" revision="959eaf944140a6c660990f38b1db310ddd6d8e42"/>
