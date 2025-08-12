@@ -8,7 +8,7 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase-owned Couchbase Lite Core and EE         -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <project name="couchbase-lite-core" groups="bsl" sync-s="true">
+  <project name="couchbase-lite-core" groups="bsl" sync-s="true" revision="cbl-7253-experiment">
     <annotation name="BSL_REVIEW" value="github-pr" keep="true"/>
     <annotation name="BSL_REVIEWERS" value="jianminzhao" keep="true"/>
   </project>
