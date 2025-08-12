@@ -10,9 +10,9 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="couchbase-lite-core" groups="bsl" sync-s="true">
     <annotation name="BSL_REVIEW" value="github-pr" keep="true"/>
-    <annotation name="BSL_REVIEWERS" value="jianminzhao,callumbirks" keep="true"/>
+    <annotation name="BSL_REVIEWERS" value="jianminzhao" keep="true"/>
   </project>
-  <project name="couchbase-lite-core-EE" remote="couchbase-priv" groups="notdefault,enterprise" sync-s="true" revision="fix/p2p-resolve-addresses"/>
+  <project name="couchbase-lite-core-EE" remote="couchbase-priv" groups="notdefault,enterprise" sync-s="true" revision="cbl-7253-experiment"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Build support - build scripts, etc.                -->
