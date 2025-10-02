@@ -39,7 +39,7 @@
   <project name="ns_server" revision="morpheus" groups="bsl"/>
   <project name="vbmap"/>
   <project name="phosphor" revision="f7128859bec2052473cf8839edf9a5d36be82b01" groups="bsl,kv"/>
-  <project name="platform" revision="5170aa5de9cf2b3ff6da86e84f8548e14ecf8c07" groups="bsl,kv"/>
+  <project name="platform" revision="974c10b838347a3ca1f4d5f71eadbd45545f3961" groups="bsl,kv"/>
   <project name="product-texts"/>
   <project name="query-ee" revision="morpheus" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="query" revision="morpheus" path="goproj/src/github.com/couchbase/query" groups="bsl"/>
