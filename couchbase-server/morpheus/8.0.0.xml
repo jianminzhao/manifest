@@ -60,11 +60,11 @@
   <project name="udf-api" path="goproj/src/github.com/couchbase/udf-api"/>
   <project name="xdcrDiffer" path="goproj/src/github.com/couchbase/xdcrDiffer" revision="morpheus"/>
   <!-- Analytics additions -->
-  <project name="cbas-core" revision="morpheus" path="analytics" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
-  <project name="asterixdb" revision="morpheus" path="analytics/asterixdb" groups="notdefault,enterprise,analytics"/>
-  <project name="analytics-dcp-client" revision="morpheus" path="analytics/java-dcp-client" groups="notdefault,enterprise,analytics"/>
-  <project name="cbas" revision="morpheus" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
-  <project name="cbas-ui" revision="morpheus" groups="notdefault,enterprise,analytics"/>
+  <project name="cbas-core" revision="5fa38caf2216f778ffe9b77990622ce1fe3de680" path="analytics" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
+  <project name="asterixdb" revision="ee3ffc2eb3fc219159f0fc41966288bdf698df71" path="analytics/asterixdb" groups="notdefault,enterprise,analytics"/>
+  <project name="analytics-dcp-client" revision="5510beb748cb79b29ed95ecdb4b1cf6a53279bf4" path="analytics/java-dcp-client" groups="notdefault,enterprise,analytics"/>
+  <project name="cbas" revision="dfe208b90cc9e54fcefb02a94cffda80ded796d5" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
+  <project name="cbas-ui" revision="293991ffe6507cdc931f85f0a5057c717c67daea" groups="notdefault,enterprise,analytics"/>
 
   <!-- Third-party projects -->
 
