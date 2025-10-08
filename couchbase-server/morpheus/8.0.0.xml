@@ -36,7 +36,7 @@
   <project name="kv_engine" revision="morpheus" groups="kv,bsl"/>
   <project name="libcouchbase" revision="refs/tags/3.3.18"/>
   <project name="magma" revision="morpheus" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv"/>
-  <project name="ns_server" revision="morpheus" groups="bsl"/>
+  <project name="ns_server" revision="22521032f7e78edc8754a15bc8bc560d61ff54ec" groups="bsl"/>
   <project name="vbmap"/>
   <project name="phosphor" revision="f7128859bec2052473cf8839edf9a5d36be82b01" groups="bsl,kv"/>
   <project name="platform" revision="974c10b838347a3ca1f4d5f71eadbd45545f3961" groups="bsl,kv"/>
