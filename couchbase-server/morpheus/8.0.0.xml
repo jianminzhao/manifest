@@ -47,7 +47,7 @@
   <project name="regulator" revision="54ca6af1f3f0fd83fb684417b23c6741a81d31c0" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="sigar" revision="b1718d5c99a2bd37d97fe2c96eb0fd33a06461af" groups="kv"/>
   <project name="subjson" revision="ae77e5120fa08e93ba0f541670c46a4a3d1825cc" groups="bsl,kv"/>
-  <project name="testrunner"/>
+  <project name="testrunner" revision="morpheus"/>
   <project name="tlm" revision="8.0.0" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh"/>
     <copyfile src="GNUmakefile" dest="GNUmakefile"/>
