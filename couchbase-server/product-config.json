@@ -56,8 +56,20 @@
         },
         "couchbase-server/trinity.xml": {
             "release": "trinity",
-            "release_name": "Trinity",
+            "release_name": "Trinity (7.6.9)",
             "parent": "branch-master.xml",
+            "production": true,
+            "start_build": 7400,
+            "trigger_blackduck": true,
+            "interval": 123,
+            "keep_git": true,
+            "restricted": true,
+            "approval_ticket": "MB-68950"
+        },
+        "couchbase-server/trinity/7.6.8.xml": {
+            "release": "trinity",
+            "release_name": "Trinity (7.6.8)",
+            "parent": "couchbase-server/trinity.xml",
             "production": true,
             "start_build": 7000,
             "trigger_blackduck": true,
