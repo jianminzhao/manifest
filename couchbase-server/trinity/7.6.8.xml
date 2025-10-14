@@ -11,7 +11,7 @@
   <!-- Core Couchbase Server projects -->
   <project name="backup" remote="couchbase-priv" path="backup" groups="backup,notdefault,enterprise" revision="9580f312da103572a70a3ea81075e6674c99888b"/>
   <project name="cbbs" remote="couchbase-priv" groups="backup,notdefault,enterprise" revision="64509dac9301557db87ac075449f91722ac13d49"/>
-  <project name="cbft" revision="56ca29a11ac4264b842411c86ad6580b491af4cb"/>
+  <project name="cbft" revision="2450f1c07ac63f18977c4900b9e776581e9be5e2"/>
   <project name="cbftx" remote="couchbase-priv" groups="notdefault,enterprise" revision="573a6e5252d6830b0ab239b21e4eef59ca9793d1"/>
   <project name="hebrew" remote="couchbase-priv" groups="notdefault,enterprise" revision="c57616b187889a5318688f49817ccaceb9c098b9"/>
   <project name="cbgt" revision="573744cf60337fb9956d58546318ee88a92a510e"/>
