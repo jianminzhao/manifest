@@ -18,8 +18,8 @@
   <extend-project name="cbas" revision="master" dest-branch="master" />
   <extend-project name="cbas-ui" revision="master" dest-branch="master" />
 
-  <!-- Pick up latest morpheus tlm -->
-  <extend-project name="tlm" revision="morpheus"/>
+  <!-- Pick up pinned tlm (includes erlang changes (MB-68462) -->
+  <extend-project name="tlm" revision="ec0c616067376739b81ccd6f3614c503c98da720"/>
 
   <!-- Advance couchdb for erlang changes (MB-68462) -->
   <extend-project name="couchdb" revision="8dc1a066b526f3a01906afa1543965fb75d4450b" />
