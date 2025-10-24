@@ -8,11 +8,11 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase-owned Couchbase Lite Core and EE         -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <project name="couchbase-lite-core" groups="bsl" sync-s="true" revision="cbl-7347-dbg-logging">
+  <project name="couchbase-lite-core" groups="bsl" sync-s="true" revision="vf-21330">
     <annotation name="BSL_REVIEW" value="github-pr" keep="true"/>
     <annotation name="BSL_REVIEWERS" value="jianminzhao" keep="true"/>
   </project>
-  <project name="couchbase-lite-core-EE" remote="couchbase-priv" groups="notdefault,enterprise" sync-s="true" revision="cbl-7347-dbg-logging"/>
+  <project name="couchbase-lite-core-EE" remote="couchbase-priv" groups="notdefault,enterprise" sync-s="true" revision="release/3.3"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Build support - build scripts, etc.                -->
