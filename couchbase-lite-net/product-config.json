@@ -10,6 +10,16 @@
             "trigger_blackduck": true,
             "do-build": true
         },
+        "couchbase-lite-net/4.0.xml": {
+            "release_name": "Couchbase Lite Net - 4.0",
+            "production": true,
+            "interval": 120,
+            "restricted": false,
+            "start_build": 1,
+            "keep_git": true,
+            "trigger_blackduck": true,
+            "do-build": true
+        },
         "couchbase-lite-net/3.2.xml": {
             "release_name": "Couchbase Lite Net - 3.2",
             "production": true,
@@ -18,7 +28,7 @@
             "start_build": 1,
             "keep_git": true,
             "trigger_blackduck": true,
-            "do-build": true
+            "do-build": false
         },
         "couchbase-lite-net/helium.xml": {
             "release_name": "Couchbase Lite Net - Helium",
