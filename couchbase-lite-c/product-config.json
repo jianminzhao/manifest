@@ -9,6 +9,15 @@
         "keep_git": true,
         "trigger_blackduck": true
       },
+      "couchbase-lite-c/4.0.xml": {
+        "release_name": "Couchbase Lite C - 4.0",
+        "production": true,
+        "interval": 120,
+        "restricted": false,
+        "start_build": 1,
+        "keep_git": true,
+        "trigger_blackduck": true
+      },
       "couchbase-lite-c/3.2.xml": {
         "release_name": "Couchbase Lite C - 3.2",
         "production": true,
