@@ -10,11 +10,7 @@
   <!-- Build support - build scripts, etc.                -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="build" path="cbbuild" groups="notdefault" revision="fa5df77677945a629aeb82aeaa3d43218df2a88d">
-    <!--
-    Before releasing versions with this manifest, you probably want to update master.xml
-    to make sure it isn't also creating 4.0 builds.
-    -->
-    <annotation name="VERSION" value="4.0.0" keep="true"/>
+    <annotation name="VERSION" value="4.0.1" keep="true"/>
   </project>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
