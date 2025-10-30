@@ -3,18 +3,18 @@
   <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org"/>
   <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org"/>
 
-  <default remote="couchbase" revision="master"/>
+  <default remote="couchbase" revision="release/4.0"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase-owned primary repository                 -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="couchbase-mobile-tools" remote="couchbaselabs" path="couchbase-mobile-tools" sync-s="true"/>
-  
+
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Build support - build scripts, etc.                -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="build" path="cbbuild" revision="a8ba0a9d6058381edc320648cafaf696a611908c">
-    <annotation name="VERSION" value="4.1.0" keep="true"/>
+    <annotation name="VERSION" value="4.0.1" keep="true"/>
   </project>
 
   <!-- Want these explicitly master, regardless of the default -->
