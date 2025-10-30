@@ -14,7 +14,7 @@
             "production": true,
             "start_build": 1000,
             "trigger_blackduck": true,
-            "interval": 241,
+            "interval": 127,
             "keep_git": true
         },
         "couchbase-server/morpheus.xml": {
