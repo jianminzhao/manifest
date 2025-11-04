@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="couchbase"     fetch="https://github.com/couchbase/"         review="review.couchbase.org" />
   <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/"    review="review.couchbase.org" />
@@ -34,10 +33,11 @@
   <project name="eventing"    path="goproj/src/github.com/couchbase/eventing" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="kv_engine" groups="kv,bsl"/>
-  <project name="libcouchbase" revision="d6769941fdcdae51966d7c5dc69d40523456518c"/>
+  <project name="libcouchbase" revision="refs/tags/3.3.16"/>
   <project name="magma" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
   <project name="fusion" revision="main" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
   <project name="ns_server" groups="bsl"/>
+  <project name="server-ui" remote="couchbase-priv" revision="main"/>
   <project name="vbmap"/>
   <project name="phosphor" groups="bsl,kv"/>
   <project name="platform" groups="bsl,kv"/>
@@ -68,7 +68,10 @@
   <project name="cbas-ui" revision="morpheus" groups="notdefault,enterprise,analytics"/>
 
   <!-- Third-party projects -->
-  <project name="zapx" revision="geo3" remote="blevesearch" path="godeps/src/github.com/blevesearch/zapx"/>
+  <project name="bleve" revision="fileCallbacks" remote="blevesearch" path="godeps/src/github.com/blevesearch/bleve"/>
+  <project name="zapx" revision="fileCallbacks" remote="blevesearch" path="godeps/src/github.com/blevesearch/zapx"/>
+  <project name="bleve_index_api" revision="fileCallbacks" remote="blevesearch" path="godeps/src/github.com/blevesearch/bleve_index_api"/>
+  <project name="scorch_segment_api" revision="fileCallbacks" remote="blevesearch" path="godeps/src/github.com/blevesearch/scorch_segment_api"/>
 
   <!-- Go support libraries - Couchbase-supported -->
   <!-- Some are in goproj to facilitate eventual move to Go modules -->
@@ -83,15 +86,10 @@
   <!-- C/C++ support libraries -->
   <project name="gsl-lite"       remote="couchbasedeps" revision="refs/tags/v0.38.1" path="third_party/gsl-lite" groups="kv"/>
   <project name="HdrHistogram_c" remote="couchbasedeps" revision="9ead6b88adbf8d6131e5ae7a3a699c477a3b4195" path="third_party/HdrHistogram_c" groups="kv"/>
-  <project name="simdutf"        remote="couchbasedeps" revision="refs/tags/v3.2.14" path="third_party/simdutf" groups="kv"/>
 
   <!-- Couchbase internal build infrastructure -->
   <project name="build"      path="cbbuild"           groups="notdefault,build">
-    <annotation name="VERSION" value="8.0.0"     keep="true"/>
-    <annotation name="BSL_PRODUCT" value="Couchbase Server" keep="true"/>
-    <annotation name="BSL_VERSION" value="8.0" keep="true"/>
-    <annotation name="BSL_CHANGE_DATE" value="March 1, 2029" keep="true"/>
-    <annotation name="BSL_MAIN_OK" value="true" keep="true"/>
+    <annotation name="VERSION" value="8.1.0"     keep="true"/>
   </project>
   <project name="voltron"    remote="couchbase-priv"  groups="notdefault,packaging" />
   <project name="couchdbx-app" groups="notdefault,packaging" />
