@@ -1,6 +1,17 @@
 {
     "manifests": {
         "couchbase-cloud-native-gateway/master.xml": {
+            "release_name": "Couchbase Cloud Native Gateway - master branch",
+            "production": true,
+            "interval": 240,
+            "restricted": false,
+            "start_build": 123,
+            "trigger_blackduck": true,
+            "jenkins_job": "couchbase-k8s-microservice-build",
+            "keep_git": true
+        },
+        "couchbase-cloud-native-gateway/1.1.xml": {
+            "release_name": "Couchbase Cloud Native Gateway - 1.1",
             "production": true,
             "interval": 240,
             "restricted": false,
