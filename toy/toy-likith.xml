@@ -69,9 +69,9 @@
 
   <!-- Third-party projects -->
   <project name="bleve" revision="fileCallbacks" remote="blevesearch" path="godeps/src/github.com/blevesearch/bleve"/>
-  <project name="zapx" revision="fileCallbacks" remote="blevesearch" path="godeps/src/github.com/blevesearch/zapx"/>
-  <project name="bleve_index_api" revision="fileCallbacks" remote="blevesearch" path="godeps/src/github.com/blevesearch/bleve_index_api"/>
-  <project name="scorch_segment_api" revision="fileCallbacks" remote="blevesearch" path="godeps/src/github.com/blevesearch/scorch_segment_api"/>
+  <project name="zapx" revision="master" remote="blevesearch" path="godeps/src/github.com/blevesearch/zapx"/>
+  <project name="bleve_index_api" revision="master" remote="blevesearch" path="godeps/src/github.com/blevesearch/bleve_index_api"/>
+  <project name="scorch_segment_api" revision="master" remote="blevesearch" path="godeps/src/github.com/blevesearch/scorch_segment_api"/>
 
   <!-- Go support libraries - Couchbase-supported -->
   <!-- Some are in goproj to facilitate eventual move to Go modules -->
