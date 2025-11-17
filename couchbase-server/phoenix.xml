@@ -18,6 +18,9 @@
   <extend-project name="cbas" revision="master" dest-branch="master" />
   <extend-project name="cbas-ui" revision="master" dest-branch="master" />
 
+  <!-- Pickup voltron project from the phoenix branch -->
+  <extend-project name="voltron" revision="phoenix" dest-branch="phoenix" />
+
   <!-- Pick up pinned tlm (includes erlang changes (MB-68462) -->
   <extend-project name="tlm" revision="ec0c616067376739b81ccd6f3614c503c98da720"/>
 
