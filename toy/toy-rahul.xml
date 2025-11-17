@@ -2,6 +2,7 @@
 <manifest>
   <remote name="couchbase"     fetch="https://github.com/couchbase/"         review="review.couchbase.org" />
   <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/"    review="review.couchbase.org" />
+  <remote name="myUIfork"         fetch="ssh://git@github.com/CascadingRadium/" />
   <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/"     review="review.couchbase.org" />
   <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/"     review="review.couchbase.org" />
   <remote name="blevesearch"   fetch="https://github.com/blevesearch/" />
@@ -38,7 +39,7 @@
   <project name="magma" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
   <project name="fusion" revision="main" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
   <project name="ns_server" groups="bsl"/>
-  <project name="server-ui" remote="couchbase-priv" revision="main"/>
+  <project name="server-ui" remote="myUIfork" revision="nestedUI" />
   <project name="vbmap"/>
   <project name="phosphor" groups="bsl,kv"/>
   <project name="platform" groups="bsl,kv"/>
