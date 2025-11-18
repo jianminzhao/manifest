@@ -2,9 +2,11 @@
 <manifest>
   <include name="couchbase-server/phoenix.xml"/>
 
+  <!-- lock ns_server SHA for 2.1 GA -->
+  <extend-project name="ns_server" revision="e0a0eb9074ac784210444d0d973c149a117212b5" dest-branch="phoenix" />
+
   <!-- replicate the extended projects from the couchbase-server/phoenix.xml manifest to make the
      restricted branch check go -->
-  <extend-project name="ns_server" revision="phoenix" dest-branch="phoenix" />
   <extend-project name="asterixdb" revision="phoenix" dest-branch="phoenix" />
   <extend-project name="cbas-core" revision="phoenix" dest-branch="phoenix" />
   <extend-project name="analytics-dcp-client" revision="master" dest-branch="master" />
