@@ -10,6 +10,9 @@
   <extend-project name="cbas" revision="master" dest-branch="master" />
   <extend-project name="cbas-ui" revision="master" dest-branch="master" />
 
+  <!-- Override ns_server for MB-69197 -->
+  <extend-project name="ns_server" revision="0642af397d93853c45612935684f7261ef99eeb9" dest-branch="8.0.0" />
+
   <!-- Add the columnar-ui project -->
   <project name="columnar-ui-v1" groups="notdefault,build,enterprise,analytics" />
 
