@@ -9,7 +9,7 @@
      restricted branch check go -->
   <extend-project name="asterixdb" revision="phoenix" dest-branch="phoenix" />
   <extend-project name="cbas-core" revision="phoenix" dest-branch="phoenix" />
-  <extend-project name="analytics-dcp-client" revision="master" dest-branch="master" />
+  <extend-project name="analytics-dcp-client" revision="30363597f48fdef6769b74074362ebe563dea855" dest-branch="master" />
   <extend-project name="cbas" revision="phoenix" dest-branch="phoenix" />
   <extend-project name="cbas-ui" revision="master" dest-branch="master" />
   <extend-project name="voltron" revision="phoenix" dest-branch="phoenix" />
