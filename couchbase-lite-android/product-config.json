@@ -25,7 +25,7 @@
             "jenkins_job": "couchbase-lite-android"
         },
         "couchbase-lite-android/3.3.xml": {
-            "release_name": "Couchbase Lite Android - v3.3.0",
+            "release_name": "Couchbase Lite Android - v3.3.1",
             "production": true,
             "interval": 90,
             "restricted": false,
