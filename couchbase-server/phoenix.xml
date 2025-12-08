@@ -21,8 +21,8 @@
   <!-- Pickup voltron project from the phoenix branch -->
   <extend-project name="voltron" revision="phoenix" dest-branch="phoenix" />
 
-  <!-- Pick up pinned tlm (includes erlang changes (MB-68462) -->
-  <extend-project name="tlm" revision="ec0c616067376739b81ccd6f3614c503c98da720"/>
+  <!-- Pick up tlm project from phoenix branch -->
+  <extend-project name="tlm" revision="phoenix" dest-branch="phoenix"/>
 
   <!-- Advance couchdb for erlang changes (MB-68462) -->
   <extend-project name="couchdb" revision="8dc1a066b526f3a01906afa1543965fb75d4450b" />
