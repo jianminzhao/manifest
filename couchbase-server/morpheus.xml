@@ -18,7 +18,7 @@
   <project name="cbgt" revision="morpheus"/>
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" groups="bsl"/>
   <project name="couchbase-cli" groups="kv" revision="morpheus"/>
-  <project name="couchdb" dest-branch="unstable"/>
+  <project name="couchdb" revision="morpheus" dest-branch="unstable"/>
   <project name="couchstore" revision="morpheus" groups="kv"/>
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" />
   <!-- forestdb uses "cb-master" branch in place of "master" for all production builds. -->
@@ -31,8 +31,8 @@
   <project name="nitro"       revision="morpheus"      path="goproj/src/github.com/couchbase/nitro" dest-branch="unstable" groups="bsl"/>
   <project name="indexing"    revision="morpheus"   path="goproj/src/github.com/couchbase/indexing" dest-branch="unstable" groups="bsl"/>
   <project name="plasma"      revision="morpheus"     path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise"/>
-  <project name="eventing"    path="goproj/src/github.com/couchbase/eventing" dest-branch="unstable" groups="notdefault,enterprise"/>
-  <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise"/>
+  <project name="eventing"    path="goproj/src/github.com/couchbase/eventing" revision="morpheus" dest-branch="unstable" groups="notdefault,enterprise"/>
+  <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="morpheus" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="kv_engine" revision="morpheus" groups="kv,bsl"/>
   <project name="libcouchbase" revision="refs/tags/3.3.18"/>
   <project name="magma" revision="morpheus" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
