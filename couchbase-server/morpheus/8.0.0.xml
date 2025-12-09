@@ -89,5 +89,5 @@
   <project name="voltron" revision="1d6b6d25e03d5019a5d55cd866ac4fb40bb71d55" remote="couchbase-priv" groups="notdefault,packaging"/>
   <project name="couchdbx-app" groups="notdefault,packaging" revision="f797baeb32ff473cec77dae36e239dd806afc519"/>
   <project name="product-metadata" groups="notdefault,packaging" revision="457ccdac9b408779e76d46bd6f06a958a6be4469"/>
-  <project name="golang" revision="main" remote="couchbaselabs" groups="kv"/>
+  <project name="golang" revision="fedc2c3ac05da7a63b48252444f033ff4777e19e" remote="couchbaselabs" groups="kv"/>
 </manifest>
