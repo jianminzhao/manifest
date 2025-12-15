@@ -33,11 +33,11 @@
   <project name="plasma"      path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="eventing"    path="goproj/src/github.com/couchbase/eventing" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise"/>
-  <project name="kv_engine" groups="kv,bsl"/>
+  <project name="kv_engine" groups="kv,bsl" revision="0000d1359d1d698799591b79ca548431bf766765"/>
   <project name="libcouchbase" revision="refs/tags/3.3.16"/>
   <project name="magma" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" revision="hackathon-2025" />
-  <project name="fusion" revision="main" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
-  <project name="ns_server" groups="bsl"/>
+  <project name="fusion" revision="22611f4a74644cb116dba84d5aefa0b833bce38f" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
+  <project name="ns_server" groups="bsl" revision="41657399de487679496058bb4b531d732a2e150d"/>
   <project name="server-ui" remote="couchbase-priv" revision="main" groups="notdefault,enterprise"/>
   <project name="vbmap"/>
   <project name="phosphor" groups="bsl,kv"/>
