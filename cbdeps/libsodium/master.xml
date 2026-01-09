@@ -8,13 +8,13 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase-owned primary repository                 -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <project name="libsodium" path="libsodium" remote="couchbasedeps" revision="refs/tags/1.0.18-RELEASE"/>
+  <project name="libsodium" path="libsodium" remote="couchbasedeps" revision="refs/tags/1.0.21-RELEASE"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Build support - build scripts, etc.                -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="build-tools" path="build-tools"/>
   <project name="build" path="cbbuild">
-    <annotation name="VERSION" value="1.0.18" keep="true"/>
+    <annotation name="VERSION" value="1.0.21" keep="true"/>
   </project>
 </manifest>
