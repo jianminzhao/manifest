@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org"/>
+  <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org"/>
+
+  <default remote="couchbase" revision="release/4.0"/>
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- Couchbase-owned primary repositories               -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <project name="couchbase-lite-ios-ee" remote="couchbaselabs-priv" groups="enterprise,notdefault" sync-s="true"/>
+  <project name="couchbase-lite-ios" remote="couchbase" sync-s="true"/>
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- Build support - build scripts, etc.                -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <project name="product-texts" revision="master"/>
+  <project name="build" revision="844e2484067053d7af88e706a814766265bf03df">
+    <annotation name="VERSION" value="4.0.3" keep="true"/>
+  </project>
+</manifest>

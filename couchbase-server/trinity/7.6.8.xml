@@ -17,7 +17,7 @@
   <project name="cbgt" revision="573744cf60337fb9956d58546318ee88a92a510e"/>
   <project name="cbsummary" revision="b93a39e6c46c3de1a73153d49579012f0737592b" path="goproj/src/github.com/couchbase/cbsummary"/>
   <project name="couchbase-cli" groups="kv" revision="57e662c90d16647b32fe4ccef5f9cbc5f53f229c"/>
-  <project name="couchdb" revision="trinity" dest-branch="unstable"/>
+  <project name="couchdb" revision="4652ef35429fa735cfb09ece6c29fe9d4deba920" dest-branch="unstable"/>
   <project name="couchstore" revision="100f8285b78be209e8864d13dfb1775df4e511be" groups="kv"/>
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" revision="cf3254d7dfb042192c9a23bd2e64a281c32a29d8"/>
   <!-- forestdb uses "cb-master" branch in place of "master" for all production builds. -->
@@ -26,28 +26,28 @@
   <project name="geocouch" revision="68f3b9d36630682d17ca5232770f1693b9b8fa18"/>
   <project name="goxdcr" revision="3a60ee514575e1eec0cbcaf540920e7207b1b213" path="goproj/src/github.com/couchbase/goxdcr" groups="bsl"/>
   <project name="gometa" revision="25cf23faca4b9f76a506491cdaa317e6f9c64f32" path="goproj/src/github.com/couchbase/gometa"/>
-  <project name="nitro" revision="9893013cff1a71058d1733b6eb96ae76b5392a86" path="goproj/src/github.com/couchbase/nitro" groups="bsl"/>
-  <project name="indexing" revision="2c9eac2fc1300b4dfbbf1ba1b026eea4c16ed871" path="goproj/src/github.com/couchbase/indexing" groups="bsl"/>
-  <project name="plasma" revision="7f1d5344ecdd1480347002166cd8f70036f8626a" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" groups="notdefault,enterprise"/>
-  <project name="eventing" revision="f17acc7a2484ca7c3b7da78eadbe1e471b36741f" path="goproj/src/github.com/couchbase/eventing" dest-branch="unstable" groups="notdefault,enterprise"/>
+  <project name="nitro" revision="7.6.8" path="goproj/src/github.com/couchbase/nitro" groups="bsl"/>
+  <project name="indexing" revision="7.6.8" path="goproj/src/github.com/couchbase/indexing" groups="bsl"/>
+  <project name="plasma" revision="7.6.8" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" groups="notdefault,enterprise"/>
+  <project name="eventing" revision="188a60d965322d6873d73cd8e5e0e9a1542d2acd" path="goproj/src/github.com/couchbase/eventing" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="eventing-ee" revision="ad3f7e4ebe7336a031bb4d741f7d1b8b7a6fc7cf" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="kv_engine" revision="887bb982798f6922252bd9eb576e14875a853381" groups="kv,bsl"/>
   <project name="libcouchbase" revision="refs/tags/3.3.18"/>
   <project name="magma" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" revision="4f5713904c277398b9b29482e7db83a223b5b124"/>
-  <project name="ns_server" revision="7ae3180bdd221f9c4d49cd19c8721ed90323b322" groups="bsl"/>
+  <project name="ns_server" revision="7.6.8" groups="bsl"/>
   <project name="chronicle" revision="8d1feeb0d8b15e2b6a4c1a417addfd159b422a71" path="ns_server/deps/chronicle"/>
   <project name="vbmap" revision="6cce93c4af4497d8108c3ed31b84d7139321cc82"/>
   <project name="phosphor" groups="bsl,kv" revision="9a9948bf3dcd8d84858928077002599c792d7007"/>
   <project name="platform" revision="6e3baeb0a44fb0a9457ef7072178703d05f97849" groups="bsl,kv"/>
   <project name="product-texts" revision="3045d75408333b6fd7c2209fbfd7a2e4a85b3d96"/>
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" groups="notdefault,enterprise" revision="2231f1e7922ea1fa743cfc9d42c29475920e6410"/>
-  <project name="query" path="goproj/src/github.com/couchbase/query" groups="bsl" revision="trinity"/>
+  <project name="query" path="goproj/src/github.com/couchbase/query" groups="bsl" revision="7.6.8"/>
   <project name="query-ui" groups="bsl" revision="070041863af809d621b49f3433989571ebc4b7d3"/>
   <project name="regulator" revision="54ca6af1f3f0fd83fb684417b23c6741a81d31c0" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="sigar" groups="kv" revision="8e33950e677d96baea6ab7cced693ff367ec1353"/>
   <project name="subjson" groups="bsl,kv" revision="fe97e72e68a701acfc2b4f18a571d232c42fa930"/>
   <project name="testrunner" revision="a2fbfac89cf9de1b977ab8905ae6fc759a927a8e"/>
-  <project name="tlm" groups="bsl,kv" revision="068f362c5ca95faebe8b967bacc24f84accb3e9f">
+  <project name="tlm" groups="bsl,kv" revision="7.6.8">
     <copyfile src="Build.sh" dest="Build.sh"/>
     <copyfile src="GNUmakefile" dest="GNUmakefile"/>
     <copyfile src="Makefile" dest="Makefile"/>
@@ -117,5 +117,5 @@
   <project name="voltron" revision="a278fa3f9a3328297f5a353764cb5555a94cc781" remote="couchbase-priv" groups="notdefault,packaging"/>
   <project name="couchdbx-app" groups="notdefault,packaging" revision="c5fb480056225d137277b46463c7e54fa180f34f"/>
   <project name="product-metadata" groups="notdefault,packaging"/>
-  <project name="golang" revision="main" remote="couchbaselabs" groups="kv"/>
+  <project name="golang" revision="fedc2c3ac05da7a63b48252444f033ff4777e19e" remote="couchbaselabs" groups="kv"/>
 </manifest>

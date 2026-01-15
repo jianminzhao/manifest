@@ -9,7 +9,7 @@
                         "linux:aarch64",
                         "macos",
                         "macos:arm64",
-                        "windows_msvc2019" ],
+                        "windows_msvc2022" ],
             "do-build": false,
             "keep_git": true
         }

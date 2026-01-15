@@ -10,6 +10,9 @@
   <extend-project name="cbas" revision="master" dest-branch="master" />
   <extend-project name="cbas-ui" revision="master" dest-branch="master" />
 
+  <!-- Override ns_server for MB-69197 -->
+  <extend-project name="ns_server" revision="0642af397d93853c45612935684f7261ef99eeb9" dest-branch="8.0.0" />
+
   <!-- Add the columnar-ui project -->
   <project name="columnar-ui-v1" groups="notdefault,build,enterprise,analytics" />
 
@@ -27,7 +30,7 @@
   <project name="build" path="cbbuild" revision="370d8bcec3b51ed409abbda23d5c9644f0725931" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="VERSION" value="2.2.0"     keep="true"/>
     <annotation name="SERVER_VERSION" value="8.0.0"     keep="true"/>
-    <annotation name="SERVER_BLD_NUM" value="8.0.0-3775"     keep="true"/>
+    <annotation name="SERVER_BLD_NUM" value="8.0.0-3782"     keep="true"/>
     <annotation name="SERVER_RELEASE" value="morpheus"     keep="true"/>
     <annotation name="COLUMNAR" value="true"     keep="true"/>
     <annotation name="COLUMNAR_COMPAT_VERSION" value="2.2.0"/>
