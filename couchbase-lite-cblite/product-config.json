@@ -16,6 +16,15 @@
             "start_build": 1,
             "keep_git": true
        },
+        "couchbase-lite-cblite/3.3-toy-build.xml": {
+            "release_name": "cblite tool - master/LiteCore3.3.0",
+            "production": true,
+            "interval": 90,
+            "restricted": false,
+            "start_build": 1,
+            "keep_git": true,
+            "trigger_blackduck": false
+       },
         "couchbase-lite-cblite/3.2.xml": {
             "release_name": "cblite tool - 3.2",
             "production": true,
