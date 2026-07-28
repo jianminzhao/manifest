@@ -26,7 +26,7 @@
   <!-- Future release-specific git branches, if necessary, should be made from cb-master. -->
   <project name="forestdb" revision="cb-master"/>
   <project name="geocouch"/>
-  <project name="gocbcrypto"  path="goproj/src/github.com/couchbase/gocbcrypto" remote="couchbase-priv" revision="main" groups="notdefault,enterprise"/>
+  <project name="gocbcrypto"  path="goproj/src/github.com/couchbase/gocbcrypto" remote="couchbase-priv" revision="main"/>
   <project name="gocoverage" revision="main"/>
   <project name="goxdcr" remote="couchbase-priv"    path="goproj/src/github.com/couchbase/goxdcr" groups="notdefault,enterprise"/>
   <project name="gometa"    path="goproj/src/github.com/couchbase/gometa"/>
