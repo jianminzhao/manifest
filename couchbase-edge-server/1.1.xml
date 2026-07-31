@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org"/>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org"/>
+
+  <default remote="couchbase" revision="release/1.1"/>
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- Couchbase-owned primary repository                 -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <project name="edge-server" remote="couchbase-priv" path="edge-server" sync-s="true" />
+  
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- Build support - build scripts, etc.                -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <project name="build" path="cbbuild" revision="e52982a3d5e53eda4ceeb4298779a0801c3f6873">
+    <annotation name="VERSION" value="1.1.0" keep="true"/>
+  </project>
+
+  <!-- Want these explicitly master, regardless of the default -->
+  <project name="product-texts" revision="master"/>
+</manifest>

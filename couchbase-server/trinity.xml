@@ -24,7 +24,8 @@
   <!-- Future release-specific git branches, if necessary, should be made from cb-master. -->
   <project name="forestdb" revision="cb-master" groups="backup"/>
   <project name="geocouch"/>
-  <project name="goxdcr" revision="trinity" path="goproj/src/github.com/couchbase/goxdcr" groups="bsl"/>
+  <project name="gocoverage" revision="main"/>
+  <project name="goxdcr" revision="trinity" path="goproj/src/github.com/couchbase/goxdcr" remote="couchbase-priv" groups="bsl"/>
   <project name="gometa"    revision="trinity" path="goproj/src/github.com/couchbase/gometa"/>
   <project name="nitro"     revision="trinity" path="goproj/src/github.com/couchbase/nitro" groups="bsl"/>
   <project name="indexing"  revision="trinity" path="goproj/src/github.com/couchbase/indexing" groups="bsl"/>
@@ -32,7 +33,7 @@
   <project name="eventing" revision="trinity" path="goproj/src/github.com/couchbase/eventing" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="eventing-ee" revision="trinity" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="kv_engine" revision="trinity" groups="kv,bsl"/>
-  <project name="libcouchbase" revision="refs/tags/3.3.18"/>
+  <project name="libcouchbase" revision="refs/tags/3.3.19"/>
   <project name="magma" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" revision="trinity"/>
   <project name="ns_server" revision="trinity" groups="bsl"/>
   <project name="chronicle" revision="8d1feeb0d8b15e2b6a4c1a417addfd159b422a71" path="ns_server/deps/chronicle"/>
@@ -63,7 +64,7 @@
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="trinity" groups="notdefault,enterprise,analytics"/>
   <project name="couchbase-jvm-core" path="analytics/couchbase-jvm-core" revision="refs/tags/1.7.24" groups="notdefault,enterprise,analytics"/>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" revision="trinity" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
-  <project name="cbas-ui" revision="293991ffe6507cdc931f85f0a5057c717c67daea" groups="notdefault,enterprise,analytics"/>
+  <project name="cbas-ui" revision="trinity" groups="notdefault,enterprise,analytics"/>
 
   <!-- Third-party projects -->
 
@@ -89,7 +90,7 @@
   <project name="go-metrics"     remote="couchbasedeps" revision="cf1acfcdf4751e0554ffa765d03e479ec491cad6"  path="godeps/src/github.com/rcrowley/go-metrics" />
   <project name="golang-snappy"  remote="couchbasedeps" revision="723cc1e459b8eea2dea4583200fd60757d40097a" path="godeps/src/github.com/golang/snappy"/>
   <project name="golang-tools"   remote="couchbasedeps" revision="a28dfb48e06b2296b66678872c2cb638f0304f20" path="godeps/src/golang.org/x/tools"/>
-  <project name="crypto"         remote="couchbasedeps" revision="refs/tags/v0.15.0"                        path="godeps/src/golang.org/x/crypto"/>
+  <project name="crypto"         remote="couchbasedeps" revision="refs/tags/v0.53.0"                        path="godeps/src/golang.org/x/crypto"/>
   <project name="sys"            remote="couchbasedeps" revision="d36c6a25d886e7c9975d5bf247ac24887ba6da37" path="godeps/src/golang.org/x/sys"/>
   <project name="pkcs8"          remote="couchbasedeps" revision="refs/tags/v1.1"                           path="godeps/src/github.com/youmark/pkcs8"/>
   <project name="client_golang"  remote="couchbasedeps" revision="refs/tags/v1.12.1"                        path="godeps/src/github.com/prometheus/client_golang"/>
@@ -113,7 +114,7 @@
 
   <!-- Couchbase internal build infrastructure -->
   <project name="build" path="cbbuild" revision="trinity" groups="notdefault,build">
-    <annotation name="VERSION" value="7.6.9"     keep="true"/>
+    <annotation name="VERSION" value="7.6.13"     keep="true"/>
     <annotation name="BSL_PRODUCT" value="Couchbase Server" keep="true"/>
     <annotation name="BSL_VERSION" value="7.6" keep="true"/>
     <annotation name="BSL_CHANGE_DATE" value="March 1, 2029" keep="true"/>

@@ -25,8 +25,9 @@
   <!-- Future release-specific git branches, if necessary, should be made from cb-master. -->
   <project name="forestdb" revision="cb-master" groups="backup"/>
   <project name="geocouch"/>
-  <project name="gocbcrypto"  path="goproj/src/github.com/couchbase/gocbcrypto" remote="couchbase-priv" revision="morpheus" groups="notdefault,enterprise"/>
-  <project name="goxdcr"      revision="morpheus" path="goproj/src/github.com/couchbase/goxdcr" groups="bsl"/>
+  <project name="gocbcrypto"  path="goproj/src/github.com/couchbase/gocbcrypto" remote="couchbase-priv" revision="morpheus"/>
+  <project name="gocoverage" revision="main"/>
+  <project name="goxdcr"      revision="morpheus" path="goproj/src/github.com/couchbase/goxdcr" remote="couchbase-priv" groups="bsl"/>
   <project name="gometa"      revision="morpheus"     path="goproj/src/github.com/couchbase/gometa"/>
   <project name="nitro"       revision="morpheus"      path="goproj/src/github.com/couchbase/nitro" dest-branch="unstable" groups="bsl"/>
   <project name="indexing"    revision="morpheus"   path="goproj/src/github.com/couchbase/indexing" dest-branch="unstable" groups="bsl"/>
@@ -34,16 +35,16 @@
   <project name="eventing"    path="goproj/src/github.com/couchbase/eventing" revision="morpheus" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="morpheus" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="kv_engine" revision="morpheus" groups="kv,bsl"/>
-  <project name="libcouchbase" revision="refs/tags/3.3.18"/>
+  <project name="libcouchbase" revision="refs/tags/3.3.19"/>
   <project name="magma" revision="morpheus" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
   <project name="ns_server" revision="morpheus" groups="bsl"/>
-  <project name="vbmap"/>
+  <project name="vbmap" revision="5fde1efec33838bc0b9a1b08b233b4b423101d99"/>
   <project name="phosphor" revision="morpheus" groups="bsl,kv"/>
   <project name="platform" revision="morpheus" groups="bsl,kv"/>
   <project name="product-texts"/>
   <project name="query-ee" revision="morpheus" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="query" revision="morpheus" path="goproj/src/github.com/couchbase/query" groups="bsl"/>
-  <project name="query-ui" groups="bsl"/>
+  <project name="query-ui" revision="morpheus" groups="bsl"/>
   <project name="regulator" revision="main" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="sigar" revision="morpheus" groups="kv"/>
   <project name="subjson" revision="morpheus" groups="bsl,kv"/>
@@ -84,7 +85,7 @@
 
   <!-- Couchbase internal build infrastructure -->
   <project name="build"      path="cbbuild"           groups="notdefault,build">
-    <annotation name="VERSION" value="8.0.1"     keep="true"/>
+    <annotation name="VERSION" value="8.0.3"     keep="true"/>
     <annotation name="BSL_PRODUCT" value="Couchbase Server" keep="true"/>
     <annotation name="BSL_VERSION" value="8.0" keep="true"/>
     <annotation name="BSL_CHANGE_DATE" value="March 1, 2029" keep="true"/>

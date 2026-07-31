@@ -3,7 +3,7 @@
   <include name="couchbase-server/phoenix.xml"/>
 
   <!-- lock ns_server SHA for 2.1 GA -->
-  <extend-project name="ns_server" revision="e0a0eb9074ac784210444d0d973c149a117212b5" dest-branch="phoenix" />
+  <extend-project name="ns_server" revision="ed85480d76a7464fa353dd7ded45194b65ad2b4e" dest-branch="phoenix" />
 
   <!-- replicate the extended projects from the couchbase-server/phoenix.xml manifest to make the
      restricted branch check go -->
@@ -11,24 +11,25 @@
   <extend-project name="cbas-core" revision="phoenix" dest-branch="phoenix" />
   <extend-project name="analytics-dcp-client" revision="30363597f48fdef6769b74074362ebe563dea855" dest-branch="master" />
   <extend-project name="cbas" revision="phoenix" dest-branch="phoenix" />
-  <extend-project name="cbas-ui" revision="master" dest-branch="master" />
+  <extend-project name="cbas-ui" revision="phoenix" dest-branch="phoenix" />
   <extend-project name="voltron" revision="phoenix" dest-branch="phoenix" />
   <extend-project name="tlm" revision="phoenix" dest-branch="phoenix"/>
+  <extend-project name="regulator" revision="54ca6af1f3f0fd83fb684417b23c6741a81d31c0" />
 
   <!-- Add the columnar-ui project -->
-  <project name="columnar-ui-v1" groups="notdefault,build,enterprise,analytics" />
+  <project name="columnar-ui-v1" revision="phoenix" dest-branch="phoenix" groups="notdefault,build,enterprise,analytics" />
 
   <!-- Update build project to provide different annotations -->
   <remove-project name="build"/>
   <project name="build" path="cbbuild" revision="ba76b34e3a349a3281804c9b97ee0706d8893c36" upstream="master" dest-branch="master" groups="notdefault,build">
-    <annotation name="VERSION" value="2.1.0"     keep="true"/>
+    <annotation name="VERSION" value="2.1.2"     keep="true"/>
     <annotation name="SERVER_VERSION" value="7.9.1"     keep="true"/>
     <annotation name="SERVER_BLD_NUM" value="8.0.0-3439"     keep="true"/>
     <annotation name="SERVER_RELEASE" value="phoenix"     keep="true"/>
     <annotation name="COLUMNAR" value="true"     keep="true"/>
-    <annotation name="COLUMNAR_COMPAT_VERSION" value="2.1.0"/>
+    <annotation name="COLUMNAR_COMPAT_VERSION" value="2.1.2"/>
     <annotation name="MIN_SUPPORTED_COLUMNAR_COMPAT_VERSION" value="2.0.0"/>
-    <annotation name="MIN_SUPPORTED_COLUMNAR_PROVISIONED_COMPAT_VERSION" value="1.1.1"/>
+    <annotation name="MIN_SUPPORTED_COLUMNAR_PROVISIONED_COMPAT_VERSION" value="2.1.0"/>
   </project>
 
   <remove-project name="query"/>

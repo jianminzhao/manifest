@@ -1,7 +1,7 @@
 {
     "manifests": {
         "couchbase-lite-java/master.xml": {
-            "release_name": "Couchbase Lite Java - v4.1.0",
+            "release_name": "Couchbase Lite Java - master",
             "production": true,
             "interval": 90,
             "restricted": false,
@@ -9,59 +9,54 @@
             "keep_git": true,
             "trigger_blackduck": true,
             "do-build": true,
-            "module_projects": [ "couchbase-lite-java-ee-root", "product-texts" ],
             "jenkins_job": "couchbase-lite-java"
         },
-        "couchbase-lite-java/4.0.xml": {
-            "release_name": "Couchbase Lite Java - v4.0.2",
+        "couchbase-lite-java/4.1.xml": {
+            "release_name": "Couchbase Lite Java - v4.1",
             "production": true,
             "interval": 240,
             "restricted": false,
             "start_build": 1,
             "keep_git": true,
             "trigger_blackduck": true,
-            "do-build": true,
-            "module_projects": [ "couchbase-lite-java-ee-root", "product-texts" ],
+            "do-build": false,
             "jenkins_job": "couchbase-lite-java"
         },
-        "couchbase-lite-java/3.3.xml": {
-            "release_name": "Couchbase Lite Java - v3.3.1",
+        "couchbase-lite-java/4.0.xml": {
+            "release_name": "Couchbase Lite Java - v4.0",
+            "production": true,
+            "interval": 240,
+            "restricted": false,
+            "start_build": 1,
+            "keep_git": true,
+            "trigger_blackduck": true,
+            "do-build": false,
+            "jenkins_job": "couchbase-lite-java"
+        },
+        "couchbase-lite-java/3.4.xml": {
+            "release_name": "Couchbase Lite Java v3.4",
             "production": true,
             "interval": 90,
             "restricted": false,
             "start_build": 1,
             "keep_git": true,
             "trigger_blackduck": true,
-            "do-build": true,
-            "module_projects": [ "couchbase-lite-java-ee-root", "product-texts" ],
+            "do-build": false,
             "jenkins_job": "couchbase-lite-java"
         },
         "couchbase-lite-java/3.2.xml": {
-            "release_name": "Couchbase Lite Java v3.2.5",
+            "release_name": "Couchbase Lite Java v3.2",
             "production": true,
             "interval": 90,
             "restricted": false,
             "start_build": 1,
             "keep_git": true,
             "trigger_blackduck": true,
-            "do-build": true,
-            "module_projects": [ "couchbase-lite-java-ee-root", "product-texts" ],
+            "do-build": false,
             "jenkins_job": "couchbase-lite-java"
         },
         "couchbase-lite-java/3.1.xml": {
-            "release_name": "Couchbase Lite Java - Helium 3.1.11",
-            "production": true,
-            "interval": 43800,
-            "restricted": false,
-            "start_build": 1,
-            "keep_git": true,
-            "trigger_blackduck": true,
-            "do-build": true,
-            "module_projects": [ "couchbase-lite-java-ee-root", "product-texts" ],
-            "jenkins_job": "couchbase-lite-java"
-        },
-        "couchbase-lite-java/lithium.xml": {
-            "release_name": "Couchbase Lite Java - Lithium 3.0.15",
+            "release_name": "Couchbase Lite Java - Helium 3.1",
             "production": true,
             "interval": 43800,
             "restricted": false,
@@ -69,7 +64,25 @@
             "keep_git": true,
             "trigger_blackduck": true,
             "do-build": false,
-            "module_projects": [ "couchbase-lite-java-ee-root", "product-texts" ],
+            "module_projects": [
+                "couchbase-lite-java-ee-root",
+                "product-texts"
+            ],
+            "jenkins_job": "couchbase-lite-java"
+        },
+        "couchbase-lite-java/lithium.xml": {
+            "release_name": "Couchbase Lite Java - Lithium 3.0",
+            "production": true,
+            "interval": 43800,
+            "restricted": false,
+            "start_build": 1,
+            "keep_git": true,
+            "trigger_blackduck": true,
+            "do-build": false,
+            "module_projects": [
+                "couchbase-lite-java-ee-root",
+                "product-texts"
+            ],
             "jenkins_job": "couchbase-lite-java"
         },
         "couchbase-lite-java/hydrogen.xml": {
@@ -82,7 +95,10 @@
             "keep_git": true,
             "trigger_blackduck": true,
             "do-build": false,
-            "module_projects": [ "couchbase-lite-java-ee-root", "product-texts" ],
+            "module_projects": [
+                "couchbase-lite-java-ee-root",
+                "product-texts"
+            ],
             "jenkins_job": "couchbase-lite-java"
         },
         "couchbase-lite-java/mercury.xml": {
@@ -98,4 +114,3 @@
         }
     }
 }
-
