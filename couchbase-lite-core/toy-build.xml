@@ -3,21 +3,21 @@
   <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org"/>
   <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org"/>
 
-  <default remote="couchbase" revision="release/3.3"/>
+  <default remote="couchbase" revision="release/3.4"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase-owned Couchbase Lite Core and EE         -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <project name="couchbase-lite-core" groups="bsl" sync-s="true" revision="vf-21330">
+  <project name="couchbase-lite-core" groups="bsl" sync-s="true" revision="asan-3.4.0">
     <annotation name="BSL_REVIEW" value="github-pr" keep="true"/>
     <annotation name="BSL_REVIEWERS" value="jianminzhao" keep="true"/>
   </project>
-  <project name="couchbase-lite-core-EE" remote="couchbase-priv" groups="notdefault,enterprise" sync-s="true" revision="release/3.3"/>
+  <project name="couchbase-lite-core-EE" remote="couchbase-priv" groups="notdefault,enterprise" sync-s="true"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Build support - build scripts, etc.                -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="build" path="cbbuild" revision="b0873a8e5340301c425e2e3c0f93da95f3a027cb">
-    <annotation name="VERSION" value="3.3.0" keep="true"/>
+    <annotation name="VERSION" value="3.4.0" keep="true"/>
   </project>
 </manifest>
